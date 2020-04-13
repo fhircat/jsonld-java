@@ -5,6 +5,26 @@ JSONLD-JAVA
 
 This is a Java implementation of the JSON-LD specification (http://json-ld.org/).
 
+
+**Note: This fork under FHIRcat is a Fork of JSONLD-JAVA 1.1 proposed implementation.  
+This fork adds a wrapper class that allows a user to convert FHIR JSONLD 1.1 files to FHIR RDF.**
+
+To run this class, follow these instructions:
+
+* Clone this project
+    * git clone https://github.com/fhircat/jsonld-java.git
+* Go to the cloned project and checkout the 1.1 branch:
+    * cd jsonld-java/
+    * git checkout 1.1
+* Build the project that also creates a directory with all of its dependencies
+    * mvn clean dependency:copy-dependencies install
+* Run 
+    * java -cp ./core/target/dependency/*:./core/target/jsonld-java-0.13.1-SNAPSHOT.jar com.github.jsonldjava.RDFGEnerator <path of input dir> <path of output dir>
+* Run Example:  
+    * java -cp ./core/target/dependency/*:./core/target/jsonld-java-0.13.1-SNAPSHOT.jar com.github.jsonldjava.RDFGEnerator /fhirJsonDir /fhirRdfOutput  
+    
+---
+
 USAGE
 =====
 
