@@ -45,22 +45,20 @@ public class GenerateFhirRDF {
 
             // Customise options...
             // Call whichever JSONLD function you want! (e.g. compact)
-            Object compact = JsonLdProcessor.compact(jsonObject, context, options);
-
+//            Object compact = JsonLdProcessor.compact(jsonObject, context, options);
+            Object expanded = JsonLdProcessor.expand(jsonObject, options);
             Object rdf = JsonLdProcessor.toRDF(jsonObject, options);
 
-
-
-            String jsonString = JsonUtils.toPrettyString(compact);
+            String jsonString = JsonUtils.toPrettyString(expanded);
             String rdfString = JsonUtils.toPrettyString(rdf);
 
             // Print out the result (or don't, it's your call!)
 //            System.out.println(jsonString);
 //            System.out.println("##### ------------------------- #####");
 
-//            writeFile(outputDir, jsonString, jsonldFile.getName());
-//            writeFile(outputDir, rdfString, "rdf_" + jsonldFile.getName());
-            writeFile(outputDir, rdfString,  jsonldFile.getName());
+            writeFile(outputDir, jsonString, jsonldFile.getName());
+            writeFile(outputDir, rdfString, "rdf_" + jsonldFile.getName());
+//            writeFile(outputDir, rdfString,  jsonldFile.getName());
 
             // Print out the result (or don't, it's your call!)
             //System.out.println(JsonUtils.toPrettyString(rdf));
