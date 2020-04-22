@@ -18,11 +18,17 @@ To run this class, follow these instructions:
     * git checkout 1.1
 * Build the project that also creates a directory with all of its dependencies
     * mvn clean dependency:copy-dependencies install
-* Run 
-    * java -cp ./core/target/dependency/*:./core/target/jsonld-java-0.13.1-SNAPSHOT.jar com.github.jsonldjava.RDFGEnerator <path of input dir> <path of output dir>
-* Run Example:  
-    * java -cp ./core/target/dependency/*:./core/target/jsonld-java-0.13.1-SNAPSHOT.jar com.github.jsonldjava.RDFGEnerator /fhirJsonDir /fhirRdfOutput  
+* Run script
+    * ./runRDFProcessor.sh <path of input dir> 
+    * ./runRDFProcessor.sh /fhirJsonDir
+
+* Or run manually:  
+    * java -cp ./core/target/jsonld-java-0.13.1-SNAPSHOT.jar:./core/target/dependency/* com.github.jsonldjava.RDFGEnerator com.github.jsonldjava.RDFGEnerator <path of input dir> 
+    * java -cp ./core/target/jsonld-java-0.13.1-SNAPSHOT.jar:./core/target/dependency/* com.github.jsonldjava.RDFGEnerator /fhirJsonDir 
     
+    
+**Note: After running the script or Java, there will be two sub directories under <path of input dir>, jsonld and ttl.**
+
 ---
 
 USAGE
