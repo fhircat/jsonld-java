@@ -25,7 +25,8 @@ To run this class, follow these instructions:
     * java -cp ./core/target/jsonld-java-0.13.1-SNAPSHOT.jar:./core/target/dependency/* com.github.jsonldjava.RDFGEnerator /fhirJsonDir 
     
     
-Note: After running the script or Java, there will be two sub directories under <path of input dir>, jsonld and ttl.
+**Note: After running the script or Java, there will be two sub directories under <path of input dir>, jsonld and ttl.**
+
 ---
 
 This is a Java implementation of the [JSON-LD 1.0 specification](https://www.w3.org/TR/2014/REC-json-ld-20140116/) and the [JSON-LD-API 1.0 specification](https://www.w3.org/TR/2014/REC-json-ld-api-20140116/).
