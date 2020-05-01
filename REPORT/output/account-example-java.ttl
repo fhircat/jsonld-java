@@ -1,0 +1,115 @@
+<http://hl7.org/fhir/Coverage/7546D>
+        a       <http://hl7.org/fhir/Coverage> .
+
+<http://hl7.org/fhir/Organization/hl7>
+        a       <http://hl7.org/fhir/Organization> .
+
+<http://hl7.org/fhir/Account/example>
+        a                               <http://hl7.org/fhir/Account> ;
+        <http://hl7.org/fhir/Account.coverage>
+                [ <http://example.com/UNKNOWN#priority>
+                          [ <http://example.com/UNKNOWN#value>
+                                    1 ] ;
+                  <http://hl7.org/fhir/Account.coverage>
+                          [ <http://example.com/UNKNOWN#reference>
+                                    [ <http://example.com/UNKNOWN#value>
+                                              "Coverage/7546D" ] ;
+                            <http://hl7.org/fhir/link>  <http://hl7.org/fhir/Coverage/7546D>
+                          ] ;
+                  <http://hl7.org/fhir/index>  0
+                ] ;
+        <http://hl7.org/fhir/Account.description>
+                [ <http://example.com/UNKNOWN#value>
+                          "Hospital charges" ] ;
+        <http://hl7.org/fhir/Account.identifier>
+                [ <http://example.com/UNKNOWN#system>
+                          [ <http://example.com/UNKNOWN#value>
+                                    "urn:oid:0.1.2.3.4.5.6.7" ] ;
+                  <http://example.com/UNKNOWN#value>
+                          [ <http://example.com/UNKNOWN#value>
+                                    "654321" ] ;
+                  <http://hl7.org/fhir/index>  0
+                ] ;
+        <http://hl7.org/fhir/Account.name>
+                [ <http://example.com/UNKNOWN#value>
+                          "HACC Funded Billing for Peter James Chalmers" ] ;
+        <http://hl7.org/fhir/Account.owner>
+                [ <http://example.com/UNKNOWN#reference>
+                          [ <http://example.com/UNKNOWN#value>
+                                    "Organization/hl7" ] ;
+                  <http://hl7.org/fhir/link>  <http://hl7.org/fhir/Organization/hl7>
+                ] ;
+        <http://hl7.org/fhir/Account.servicePeriod>
+                [ <http://example.com/UNKNOWN#end>
+                          [ <http://example.com/UNKNOWN#value>
+                                    "2016-06-30" ] ;
+                  <http://example.com/UNKNOWN#start>
+                          [ <http://example.com/UNKNOWN#value>
+                                    "2016-01-01" ]
+                ] ;
+        <http://hl7.org/fhir/Account.status>
+                [ <http://example.com/UNKNOWN#value>
+                          "active" ] ;
+        <http://hl7.org/fhir/Account.subject>
+                [ <http://example.com/UNKNOWN#display>
+                          [ <http://example.com/UNKNOWN#value>
+                                    "Peter James Chalmers" ] ;
+                  <http://example.com/UNKNOWN#reference>
+                          [ <http://example.com/UNKNOWN#value>
+                                    "Patient/example" ] ;
+                  <http://hl7.org/fhir/index>  0 ;
+                  <http://hl7.org/fhir/link>   <http://hl7.org/fhir/Patient/example>
+                ] ;
+        <http://hl7.org/fhir/Account.type>
+                [ <http://example.com/UNKNOWN#coding>
+                          [ a                            <http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT> ;
+                            <http://example.com/UNKNOWN#code>
+                                    [ <http://example.com/UNKNOWN#value>
+                                              "PBILLACCT" ] ;
+                            <http://example.com/UNKNOWN#display>
+                                    [ <http://example.com/UNKNOWN#value>
+                                              "patient billing account" ] ;
+                            <http://example.com/UNKNOWN#system>
+                                    [ <http://example.com/UNKNOWN#value>
+                                              "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+                            <http://hl7.org/fhir/index>  0
+                          ] ;
+                  <http://hl7.org/fhir/DomainResource.text>
+                          [ <http://example.com/UNKNOWN#value>
+                                    "patient" ]
+                ] ;
+        <http://hl7.org/fhir/DomainResource.text>
+                [ <http://example.com/UNKNOWN#div>
+                          "<div xmlns=\"http://www.w3.org/1999/xhtml\">HACC Funded Billing for Peter James Chalmers</div>" ;
+                  <http://hl7.org/fhir/Account.status>
+                          [ <http://example.com/UNKNOWN#value>
+                                    "generated" ]
+                ] ;
+        <http://hl7.org/fhir/Resource.id>
+                [ <http://example.com/UNKNOWN#value>
+                          "example" ] ;
+        <http://hl7.org/fhir/Resource.meta>
+                [ <http://example.com/UNKNOWN#tag>
+                          [ <http://example.com/UNKNOWN#code>
+                                    [ <http://example.com/UNKNOWN#value>
+                                              "HTEST" ] ;
+                            <http://example.com/UNKNOWN#display>
+                                    [ <http://example.com/UNKNOWN#value>
+                                              "test health data" ] ;
+                            <http://example.com/UNKNOWN#system>
+                                    [ <http://example.com/UNKNOWN#value>
+                                              "http://terminology.hl7.org/CodeSystem/v3-ActReason" ] ;
+                            <http://hl7.org/fhir/index>  0
+                          ]
+                ] ;
+        <http://hl7.org/fhir/nodeRole>  <http://hl7.org/fhir/treeRoot> .
+
+<http://hl7.org/fhir/Account/example.ttl>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://www.w3.org/2002/07/owl#imports>
+                <http://hl7.org/fhir/fhir.ttl> ;
+        <http://www.w3.org/2002/07/owl#versionIRI>
+                <http://build.fhir.org/Account/example.ttl> .
+
+<http://hl7.org/fhir/Patient/example>
+        a       <http://hl7.org/fhir/Patient> .

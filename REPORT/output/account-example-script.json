@@ -1,0 +1,347 @@
+[
+  {
+    "@id": "http://hl7.org/fhir/Account/example",
+    "http://hl7.org/fhir/Account.coverage": [
+      {
+        "http://hl7.org/fhir/Account.coverage.coverage": [
+          {
+            "http://hl7.org/fhir/link": [
+              {
+                "@id": "http://hl7.org/fhir/Coverage/7546D",
+                "@type": [
+                  "http://hl7.org/fhir/Coverage"
+                ]
+              }
+            ],
+            "http://hl7.org/fhir/Reference.reference": [
+              {
+                "http://hl7.org/fhir/value": [
+                  {
+                    "@type": "http://www.w3.org/2001/XMLSchema#string",
+                    "@value": "Coverage/7546D"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "http://hl7.org/fhir/index": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": 0
+          }
+        ],
+        "http://hl7.org/fhir/Account.coverage.priority": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#positiveInteger",
+                "@value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/Account.description": [
+      {
+        "http://hl7.org/fhir/value": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@value": "Hospital charges"
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/Resource.id": [
+      {
+        "http://hl7.org/fhir/value": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@value": "example"
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/Account.identifier": [
+      {
+        "http://hl7.org/fhir/index": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": 0
+          }
+        ],
+        "http://hl7.org/fhir/Identifier.system": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+                "@value": "urn:oid:0.1.2.3.4.5.6.7"
+              }
+            ]
+          }
+        ],
+        "http://hl7.org/fhir/Identifier.value": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@value": "654321"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/Resource.meta": [
+      {
+        "http://hl7.org/fhir/Meta.tag": [
+          {
+            "http://hl7.org/fhir/Coding.code": [
+              {
+                "http://hl7.org/fhir/value": [
+                  {
+                    "@type": "http://www.w3.org/2001/XMLSchema#string",
+                    "@value": "HTEST"
+                  }
+                ]
+              }
+            ],
+            "http://hl7.org/fhir/Coding.display": [
+              {
+                "http://hl7.org/fhir/value": [
+                  {
+                    "@type": "http://www.w3.org/2001/XMLSchema#string",
+                    "@value": "test health data"
+                  }
+                ]
+              }
+            ],
+            "http://hl7.org/fhir/index": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#integer",
+                "@value": 0
+              }
+            ],
+            "http://hl7.org/fhir/Coding.system": [
+              {
+                "http://hl7.org/fhir/value": [
+                  {
+                    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+                    "@value": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/Account.name": [
+      {
+        "http://hl7.org/fhir/value": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@value": "HACC Funded Billing for Peter James Chalmers"
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/nodeRole": [
+      {
+        "@id": "http://hl7.org/fhir/treeRoot"
+      }
+    ],
+    "http://hl7.org/fhir/Account.owner": [
+      {
+        "http://hl7.org/fhir/link": [
+          {
+            "@id": "http://hl7.org/fhir/Organization/hl7",
+            "@type": [
+              "http://hl7.org/fhir/Organization"
+            ]
+          }
+        ],
+        "http://hl7.org/fhir/Reference.reference": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@value": "Organization/hl7"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      {
+        "@id": "http://hl7.org/fhir/Account"
+      }
+    ],
+    "http://hl7.org/fhir/Account.servicePeriod": [
+      {
+        "http://hl7.org/fhir/Period.end": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "@value": "2016-06-30"
+              }
+            ]
+          }
+        ],
+        "http://hl7.org/fhir/Period.start": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "@value": "2016-01-01"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/Account.status": [
+      {
+        "http://hl7.org/fhir/value": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@value": "active"
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/Account.subject": [
+      {
+        "http://hl7.org/fhir/Reference.display": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@value": "Peter James Chalmers"
+              }
+            ]
+          }
+        ],
+        "http://hl7.org/fhir/link": [
+          {
+            "@id": "http://hl7.org/fhir/Patient/example",
+            "@type": [
+              "http://hl7.org/fhir/Patient"
+            ]
+          }
+        ],
+        "http://hl7.org/fhir/index": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": 0
+          }
+        ],
+        "http://hl7.org/fhir/Reference.reference": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@value": "Patient/example"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/DomainResource.text": [
+      {
+        "http://hl7.org/fhir/Narrative.div": [
+          {
+            "@value": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HACC Funded Billing for Peter James Chalmers</div>"
+          }
+        ],
+        "http://hl7.org/fhir/Narrative.status": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@value": "generated"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "http://hl7.org/fhir/Account.type": [
+      {
+        "http://hl7.org/fhir/CodeableConcept.coding": [
+          {
+            "@type": [
+              "http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT"
+            ],
+            "http://hl7.org/fhir/Coding.code": [
+              {
+                "http://hl7.org/fhir/value": [
+                  {
+                    "@type": "http://www.w3.org/2001/XMLSchema#string",
+                    "@value": "PBILLACCT"
+                  }
+                ]
+              }
+            ],
+            "http://hl7.org/fhir/Coding.display": [
+              {
+                "http://hl7.org/fhir/value": [
+                  {
+                    "@type": "http://www.w3.org/2001/XMLSchema#string",
+                    "@value": "patient billing account"
+                  }
+                ]
+              }
+            ],
+            "http://hl7.org/fhir/index": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#integer",
+                "@value": 0
+              }
+            ],
+            "http://hl7.org/fhir/Coding.system": [
+              {
+                "http://hl7.org/fhir/value": [
+                  {
+                    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+                    "@value": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "http://hl7.org/fhir/CodeableConcept.text": [
+          {
+            "http://hl7.org/fhir/value": [
+              {
+                "@type": "http://www.w3.org/2001/XMLSchema#string",
+                "@value": "patient"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://hl7.org/fhir/Account/example.ttl",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://hl7.org/fhir/fhir.ttl"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://build.fhir.org/Account/example.ttl"
+      }
+    ]
+  }
+]

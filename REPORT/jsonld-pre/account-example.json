@@ -1,0 +1,146 @@
+{
+   "@graph": [
+      {
+         "resourceType": "fhir:Account",
+         "id": {
+            "value": "example"
+         },
+         "text": {
+            "status": {
+               "value": "generated"
+            },
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HACC Funded Billing for Peter James Chalmers</div>"
+         },
+         "identifier": [
+            {
+               "system": {
+                  "value": "urn:oid:0.1.2.3.4.5.6.7"
+               },
+               "value": {
+                  "value": "654321"
+               },
+               "index": 0
+            }
+         ],
+         "status": {
+            "value": "active"
+         },
+         "type": {
+            "coding": [
+               {
+                  "system": {
+                     "value": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+                  },
+                  "code": {
+                     "value": "PBILLACCT"
+                  },
+                  "display": {
+                     "value": "patient billing account"
+                  },
+                  "index": 0,
+                  "@type": "http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT"
+               }
+            ],
+            "text": {
+               "value": "patient"
+            }
+         },
+         "name": {
+            "value": "HACC Funded Billing for Peter James Chalmers"
+         },
+         "subject": [
+            {
+               "reference": {
+                  "value": "Patient/example"
+               },
+               "display": {
+                  "value": "Peter James Chalmers"
+               },
+               "fhir:link": {
+                  "@id": "Patient/example",
+                  "@type": "fhir:Patient"
+               },
+               "index": 0
+            }
+         ],
+         "servicePeriod": {
+            "start": {
+               "value": "2016-01-01"
+            },
+            "end": {
+               "value": "2016-06-30"
+            }
+         },
+         "coverage": [
+            {
+               "coverage": {
+                  "reference": {
+                     "value": "Coverage/7546D"
+                  },
+                  "fhir:link": {
+                     "@id": "Coverage/7546D",
+                     "@type": "fhir:Coverage"
+                  }
+               },
+               "priority": {
+                  "value": 1
+               },
+               "index": 0
+            }
+         ],
+         "owner": {
+            "reference": {
+               "value": "Organization/hl7"
+            },
+            "fhir:link": {
+               "@id": "Organization/hl7",
+               "@type": "fhir:Organization"
+            }
+         },
+         "description": {
+            "value": "Hospital charges"
+         },
+         "meta": {
+            "tag": [
+               {
+                  "system": {
+                     "value": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+                  },
+                  "code": {
+                     "value": "HTEST"
+                  },
+                  "display": {
+                     "value": "test health data"
+                  },
+                  "index": 0
+               }
+            ]
+         },
+         "@id": "Account/example",
+         "nodeRole": "fhir:treeRoot"
+      },
+      {
+         "@id": "Account/example.ttl",
+         "owl:versionIRI": "http://build.fhir.org/Account/example.ttl",
+         "owl:imports": "fhir:fhir.ttl",
+         "@type": "owl:Ontology"
+      }
+   ],
+   "@context": [
+      "https://fhircat.org/fhir-r5/rdf-r4/contexts/account.context.jsonld",
+      "https://fhircat.org/fhir-r5/rdf-r4/contexts/root.context.jsonld",
+      {
+         "nodeRole": {
+            "@type": "@id",
+            "@id": "fhir:nodeRole"
+         },
+         "@base": "http://hl7.org/fhir/",
+         "owl:imports": {
+            "@type": "@id"
+         },
+         "owl:versionIRI": {
+            "@type": "@id"
+         }
+      }
+   ]
+}

@@ -1,0 +1,181 @@
+[ {
+  "@id" : "http://hl7.org/fhir/Account/example",
+  "http://hl7.org/fhir/Account.coverage" : [ {
+    "http://hl7.org/fhir/Account.coverage" : [ {
+      "http://hl7.org/fhir/link" : [ {
+        "@id" : "http://hl7.org/fhir/Coverage/7546D",
+        "@type" : [ "http://hl7.org/fhir/Coverage" ]
+      } ],
+      "http://example.com/UNKNOWN#reference" : [ {
+        "http://example.com/UNKNOWN#value" : [ {
+          "@value" : "Coverage/7546D"
+        } ]
+      } ]
+    } ],
+    "http://hl7.org/fhir/index" : [ {
+      "@value" : 0,
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    } ],
+    "http://example.com/UNKNOWN#priority" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : 1
+      } ]
+    } ]
+  } ],
+  "http://hl7.org/fhir/Account.description" : [ {
+    "http://example.com/UNKNOWN#value" : [ {
+      "@value" : "Hospital charges"
+    } ]
+  } ],
+  "http://hl7.org/fhir/Resource.id" : [ {
+    "http://example.com/UNKNOWN#value" : [ {
+      "@value" : "example"
+    } ]
+  } ],
+  "http://hl7.org/fhir/Account.identifier" : [ {
+    "http://hl7.org/fhir/index" : [ {
+      "@value" : 0,
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    } ],
+    "http://example.com/UNKNOWN#system" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : "urn:oid:0.1.2.3.4.5.6.7"
+      } ]
+    } ],
+    "http://example.com/UNKNOWN#value" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : "654321"
+      } ]
+    } ]
+  } ],
+  "http://hl7.org/fhir/Resource.meta" : [ {
+    "http://example.com/UNKNOWN#tag" : [ {
+      "http://example.com/UNKNOWN#code" : [ {
+        "http://example.com/UNKNOWN#value" : [ {
+          "@value" : "HTEST"
+        } ]
+      } ],
+      "http://example.com/UNKNOWN#display" : [ {
+        "http://example.com/UNKNOWN#value" : [ {
+          "@value" : "test health data"
+        } ]
+      } ],
+      "http://hl7.org/fhir/index" : [ {
+        "@value" : 0,
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      } ],
+      "http://example.com/UNKNOWN#system" : [ {
+        "http://example.com/UNKNOWN#value" : [ {
+          "@value" : "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+        } ]
+      } ]
+    } ]
+  } ],
+  "http://hl7.org/fhir/Account.name" : [ {
+    "http://example.com/UNKNOWN#value" : [ {
+      "@value" : "HACC Funded Billing for Peter James Chalmers"
+    } ]
+  } ],
+  "http://hl7.org/fhir/nodeRole" : [ {
+    "@id" : "http://hl7.org/fhir/treeRoot"
+  } ],
+  "http://hl7.org/fhir/Account.owner" : [ {
+    "http://hl7.org/fhir/link" : [ {
+      "@id" : "http://hl7.org/fhir/Organization/hl7",
+      "@type" : [ "http://hl7.org/fhir/Organization" ]
+    } ],
+    "http://example.com/UNKNOWN#reference" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : "Organization/hl7"
+      } ]
+    } ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://hl7.org/fhir/Account"
+  } ],
+  "http://hl7.org/fhir/Account.servicePeriod" : [ {
+    "http://example.com/UNKNOWN#end" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : "2016-06-30"
+      } ]
+    } ],
+    "http://example.com/UNKNOWN#start" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : "2016-01-01"
+      } ]
+    } ]
+  } ],
+  "http://hl7.org/fhir/Account.status" : [ {
+    "http://example.com/UNKNOWN#value" : [ {
+      "@value" : "active"
+    } ]
+  } ],
+  "http://hl7.org/fhir/Account.subject" : [ {
+    "http://example.com/UNKNOWN#display" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : "Peter James Chalmers"
+      } ]
+    } ],
+    "http://hl7.org/fhir/link" : [ {
+      "@id" : "http://hl7.org/fhir/Patient/example",
+      "@type" : [ "http://hl7.org/fhir/Patient" ]
+    } ],
+    "http://hl7.org/fhir/index" : [ {
+      "@value" : 0,
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    } ],
+    "http://example.com/UNKNOWN#reference" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : "Patient/example"
+      } ]
+    } ]
+  } ],
+  "http://hl7.org/fhir/DomainResource.text" : [ {
+    "http://example.com/UNKNOWN#div" : [ {
+      "@value" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">HACC Funded Billing for Peter James Chalmers</div>"
+    } ],
+    "http://hl7.org/fhir/Account.status" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : "generated"
+      } ]
+    } ]
+  } ],
+  "http://hl7.org/fhir/Account.type" : [ {
+    "http://example.com/UNKNOWN#coding" : [ {
+      "@type" : [ "http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT" ],
+      "http://example.com/UNKNOWN#code" : [ {
+        "http://example.com/UNKNOWN#value" : [ {
+          "@value" : "PBILLACCT"
+        } ]
+      } ],
+      "http://example.com/UNKNOWN#display" : [ {
+        "http://example.com/UNKNOWN#value" : [ {
+          "@value" : "patient billing account"
+        } ]
+      } ],
+      "http://hl7.org/fhir/index" : [ {
+        "@value" : 0,
+        "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+      } ],
+      "http://example.com/UNKNOWN#system" : [ {
+        "http://example.com/UNKNOWN#value" : [ {
+          "@value" : "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        } ]
+      } ]
+    } ],
+    "http://hl7.org/fhir/DomainResource.text" : [ {
+      "http://example.com/UNKNOWN#value" : [ {
+        "@value" : "patient"
+      } ]
+    } ]
+  } ]
+}, {
+  "@id" : "http://hl7.org/fhir/Account/example.ttl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://hl7.org/fhir/fhir.ttl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://build.fhir.org/Account/example.ttl"
+  } ]
+} ]
